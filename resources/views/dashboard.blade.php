@@ -12,7 +12,7 @@
                     $today  = abs(date('d'));
                     $time  = date('H:i');
                 @endphp
-                @if ($today === $control->day && $control->time === $time)
+                @if ($today === $control->day)
                 <a href="{{route('new_weekend')}}" target="_blank" class="btn btn-md btn-primary">
                     <i class="fa fa-refresh"></i>
                     Nova Semana
